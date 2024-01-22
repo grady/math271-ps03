@@ -1,0 +1,17 @@
+---
+title: "solution"
+author: "Grady Weyenberg"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+data(txhousing)
+dallas_sub <- txhousing %>% filter(city=="Dallas", between(year,2012,2013)) %>% mutate(prct_sold=sales/listings*100)
+dallas_summary <- dallas_sub %>% group_by(month) %>% summarize(mean(prct_sold))
+```
+
+## R Markdown
+
