@@ -27,7 +27,7 @@ In addition we will review how to save objects using the `<-` assignment operato
 
 As before, you should use the Laulima link to accept the assignment on Github, then create a new project in RStudio that clones your new Github repository. See the first problem set for detailed instructions. 
 
-The solution file for this assignment should be named `PS03_solution.Rmd`.
+The solution file for this assignment should be named `solution.Rmd`.
 
 ### R Packages
 Run the following to load the necessary packages for this problem set:
